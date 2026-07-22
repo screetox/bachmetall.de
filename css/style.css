@@ -1,6 +1,13 @@
+:root {
+    --text: #fff;
+	--bg: #060d0e;
+	--sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -9,9 +16,16 @@ html {
 
 body {
     height: 100svh;
+	min-height: 100svh;
     width: 100svw;
-    color: #fff;
-    background-color: #000;
+	font-family: var(--sans);
+    color: var(--text);
+    background: var(--bg);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,7 +43,7 @@ hr {
     height: 1px;
     margin: 2rem 0;
     border: 0;
-    background: #fff;
+    background: var(--text);
 }
 
 h1 {
