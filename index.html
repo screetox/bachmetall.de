@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./files/img/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="/files/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Bach Metall</title>
 </head>
 
-<body class="flex-col-center">
+<body class="flex-col-center wrap-pretty">
     <div id="container" class="flex-col-center">
         <div id="header">
             <img id="logo" src="/files/img/logo.svg">
@@ -24,23 +24,26 @@
                 <div class="float-right flex-col-center">
                     <img alt="Matthias Bach" src="/files/img/matthias-bach.jpg">
                     <div id="google-map-container">
-                        <div class="map-placeholder flex-col-center">
+                        <div id="map-placeholder" class="flex-col-center">
                             <p>
                                 Beim Laden der Karte stimmen Sie den
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/intl/de_DE/help/terms_maps.html">Nutzungsbedingungen</a>
+                                <a class="external-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/intl/de_DE/help/terms_maps.html">Nutzungsbedingungen</a>
                                 von Google Maps zu.
                             </p>
                             <button onclick="loadGoogleMap()">Karte laden</button>
                         </div>
                     </div>
                 </div>
+
                 <h1>Matthias Bach</h1>
-                <p>Industriemechaniker</p>
-                <p>Metallbaumeister</p>
-                <p>Betriebswirt nach HwO</p>
+                    <p>Industriemechaniker</p>
+                    <p>Metallbaumeister</p>
+                    <p>Betriebswirt nach HwO</p>
+
                 <h2>Produkte und Dienstleistungen:</h2>
-                <p>CNC-Technik, Drehen und Fräsen</p>
-                <p><i>Hohe Flexibilität und kurze Reaktionszeit</i></p>
+                    <p>CNC-Technik, Drehen und Fräsen</p>
+                    <p><i>Hohe Flexibilität und kurze Reaktionszeit</i></p>
+
                 <div class="pre-text-icon mt-2">
                     <img alt="Telefon" src="/files/img/phone.svg">
                     <a href="tel:+4917620979349">+49 176 20979349</a>
@@ -53,22 +56,25 @@
                 <br>
                 <div class="pre-text-icon">
                     <img alt="Adresse" src="/files/img/home.svg">
-                    <a target="_blank" rel="noopener noreferrer" href="http://maps.google.com/maps?q=Preußenhäusle+1/2,+88273+Fronreute">
-                        Preußenhäusle 1/2<br>
-                        88273 Fronreute
-                    </a>
+                    <div>
+                        <a target="_blank" rel="noopener noreferrer" href="http://maps.google.com/maps?q=Preußenhäusle+1/2,+88273+Fronreute">
+                            Preußenhäusle 1/2<br>
+                            88273 Fronreute
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="footer" class="flex-col-center">
-            <div class="section flex-between">
-                <div id="copyright">© 2026 Bach Metall</div>
-                <a href="./impressum">Impressum</a>
+        <div id="footer" class="section flex-between">
+            <div id="copyright">© 2026 Bach Metall</div>
+            <div class="flex-gap">
+                <a href="/impressum">Impressum</a>
+                <a href="/datenschutzerklaerung">Datenschutzerklärung</a>
             </div>
         </div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
